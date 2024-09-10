@@ -1,0 +1,238 @@
+/* Variables for Colors and Fonts used */
+:root { 
+    /* Colors */
+    --black: #181818;
+    --gray: #E0E0E0;
+    --green: #A8FFA0;
+
+    /* Fonts */
+    --pop: "Poppins", sans-serif;
+    --rob: "Roboto", sans-serif;
+    --mon: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  ---> Background Picture w/ Transition 
+*/
+
+#bg-pic {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#181818,#343434,#2b2828,#474747);
+    background-size: 300% 300%;
+    animation: color 12s ease infinite;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* Putting things out into default(no margin etc) */
+ul, a {
+    padding: 0;
+    list-style-type: none;  
+    text-decoration: none;
+    color: var(--gray);
+    font-family: var(--pop);
+}
+
+h1, h2, h3, h4, h5, h6,p {
+    margin: 0;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    /* background-color: rgba(17, 17, 17, 0.249); */
+}
+
+.nav-logo-sec{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 7rem;
+}
+
+#nav-logo {
+    height: auto;
+    max-width: 3.5vw;
+    object-fit:contain;
+
+}
+
+.nav-bar-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bar-link {
+    display: flex;
+    padding-right: 7rem;
+    gap: 5rem;
+}
+
+
+
+/* Main Section */
+main {
+    min-height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mon);
+}
+.main-tit {
+    flex-shrink: 1;
+    color: var(--green);
+    font-size: 10rem;
+    font-weight: 700;
+    width: 85%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.sub-tit {
+    flex-shrink: 1;
+    color: var(--gray);
+    font-weight: 100;
+    font-family: var(--pop);
+    font-size: 1.5rem;
+}
+.pt-2 {
+    font-weight: 500;
+    
+}
+
+footer {
+    background-color: #A8FFA0;
+    min-height: 20vh;
+}
+
+
+/* Half Screen */
+@media only screen and (max-width: 1111px) {
+    #bg-pic {
+        height: 100%;
+        width: 100%;
+    }
+    header {
+        height: 100%;
+
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+    .main-content {
+        width: 60vw; /* Adjust width for smaller screens */
+    }
+
+    .main-tit {
+        font-size: 8rem; /* Adjust font size for smaller screens */
+    }
+
+    .sub-tit {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    footer {
+        height: auto; /* Adjust footer height for smaller screens */
+    }
+}
+
+
+/* 1/4 Screen */
+@media only screen and (max-width: 900px) {
+    #bg-pic {
+        height: 100%;
+        width: 100%;
+    }
+    header {
+        height: 100%;
+
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+    .main-content {
+        width: 60vw; /* Adjust width for smaller screens */
+    }
+
+    .main-tit {
+        font-size: 6rem; /* Adjust font size for smaller screens */
+    }
+
+    .sub-tit {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    footer {
+        height: auto; /* Adjust footer height for smaller screens */
+    }
+}
+
+
+/* Iphone */
+@media only screen and (max-width: 768px) {
+    #bg-pic {
+        height: 100%;
+        width: 100%;
+    }
+    header {
+        height: 100%;
+
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+    .main-content {
+        width: 90vw; /* Adjust width for smaller screens */
+    }
+
+    .main-tit {
+        font-size: 5rem; /* Adjust font size for smaller screens */
+    }
+
+    .sub-tit {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    footer {
+        height: auto; /* Adjust footer height for smaller screens */
+    }
+}

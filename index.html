@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Logo -->
+    <link rel="icon" href="img/bombasticsideeye.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,36 +16,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- For SocMed Logos -->
+    <script src="https://kit.fontawesome.com/1c0e36e966.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
     <!-- BACKGROUND Used -->
     <div id="bg-pic"></div>
 
     <!-- NAVIGATION BAR -->
-    <header>
+    <nav>
         <div class="nav-logo-sec">
             <img src="img/razec_lg.png" alt="" id="nav-logo">
         </div>
-        <nav class="nav-bar-sec">
+        <div class="nav-bar-sec">
             <ul id="nav-bar-link">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about_me.html">About Me</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
-    </header>
-
-    <main>
-        <div class="main-content">
-            <div class="sub-tit">Hi, I am</div>
-            <div class="main-tit">RAZEC</div>
-            <div class="sub-tit pt-2">WEB DEVELOPMENT ENTHUSIAST</div>
         </div>
-    </main>
+    </nav>
 
+    <main class="main-home">
+
+        <div class="main-content">
+            <div class="sub-tit">
+                <div id="top-sub">Hi, I am</div>
+            </div>
+            <div class="main-tit">
+                <div id="tit">Razec</div>
+            </div>
+            <div class="sub-tit pt-2">
+                <div id="bot-sub">
+                    <ul class="changing-text">
+                        <li><span>A BUSINESS ANALYTICS MAJOR</span></li>
+                        <li><span>An ORGANIZATION PRESIDENT</span></li>
+                        <li><span>A PROGRAMMER</span></li>
+                        <li><span>A GREAT PROCRASTINATOR</span></li>
+                        <li><span>A HEHEHEHEHEHHEHEHE</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="soc-med-links">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <div class="copyright">
+        <div id="vertical-line"></div>
+        <div>© 2024 John Razec M. Agno</div>
+    </div>
     <footer>
-        
+
     </footer>
 </body>
 </html>

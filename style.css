@@ -712,6 +712,9 @@ a:hover {
     text-decoration: none;
 }
   
+.link-github {
+    color: var(--black);
+}
 .proj-extra {
     padding-top: 1rem;
     display: flex;
@@ -741,6 +744,7 @@ a:hover {
 }
 
 #back-button {
+    text-decoration: none;
     display: flex;
     position: absolute;
     top: -4%;

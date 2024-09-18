@@ -340,7 +340,7 @@ a:hover {
 .sub-skills {
     position: absolute;
 
-    top: 0.1rem;
+    top: 2rem;
     color: var(--green);
     font-family: var(--mon);
     font-size: 2.5rem;
@@ -621,7 +621,16 @@ a:hover {
     font-size: 0.7rem;
     padding: 1rem;
     text-align: justify;
-    top: 7.5rem;
+    top: 6.5rem;
+}
+.proj-tech {
+    position: absolute;
+    color: rgb(153, 147, 147);
+    font-family: var(--pop);
+    font-size: 0.7rem;
+    padding: 1rem;
+    text-align: justify;
+    bottom: 0rem;
 }
 .proj-solo {
     width: 100%;
@@ -841,10 +850,13 @@ a:hover {
   .form-contact {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
-    width: 300px;
+    gap: 2rem;
+    padding: 2rem;
+    width: 70%;
+    max-width: 600px;
     background-color: rgb(39, 39, 39);
     padding: 20px;
     border-radius: 10px;
@@ -854,7 +866,7 @@ a:hover {
   .form-contact .title {
     color: var(--green);
     font-family: var(--mon);
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: -1px;
     line-height: 30px;
@@ -871,6 +883,7 @@ a:hover {
     border-radius: 8px;
     width: 100%;
     height: 50px;
+    background-color: var(--gray);
   }
   
   .form-contact textarea {
@@ -882,6 +895,7 @@ a:hover {
     outline: 0;
     padding: 8px 14px;
     border: 1px solid rgb(219, 213, 213);
+    background-color: var(--gray);
   }
   
   .form-contact button {
@@ -1269,6 +1283,11 @@ a:hover {
         visibility: hidden;
     }
 }
+@media only screen and (max-width:430px) {
+    .text-content {
+        font-size: 0.2rem;
+    }
+}
 
 @media only screen and (max-width: 450px) {
     .text-content, .extra-text-content {
@@ -1291,6 +1310,7 @@ a:hover {
     .Download-button > span {
         visibility: hidden;
     }
+
 
 }
 
@@ -1316,6 +1336,11 @@ a:hover {
         width: 10rem;
         top:2rem;
     }
+    .Download-button {
+        width: 1rem;
+        padding: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 325px) {
